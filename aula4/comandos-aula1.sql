@@ -58,3 +58,7 @@ INSERT INTO livros_autores (id_livro, id_autor) VALUES
   (4,3),
   (1,1),
   (2,2);
+
+INSERT INTO livros_autores USING (id_livro, id_autor) VALUES (4, 1);
+
+DELETE FROM livros_autores WHERE id_livro = 4 AND id_autor = 1;
